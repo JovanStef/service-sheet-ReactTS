@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": "U_123456",
+      "name": "John Doe",
+      "username": "jd@mail.com",
+      "password": "johndoepassword"
+    }
+  ],
+  "cars": [
+    {
+      "id": "C_123456",
+      "model": "Dummy-car",
+      "licensePlates": "SK-23564-BB",
+      "images": {
+        "logo": "url/to/logo.png",
+        "car": "url/to/car.png"
+      },
+      "userID": "U_123456"
+    }
+  ],
+  "sheets": [
+    {
+      "id": "S_123456",
+      "KM": "200000",
+      "date": "20-20-2020",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "price": "5000",
+      "carID": "C_123456",
+      "shopID": "M_123456"
+    }
+  ],
+  "shops": [
+    {
+      "id": "M_123456",
+      "name": "Some service shop"
+    }
+  ]
+}
