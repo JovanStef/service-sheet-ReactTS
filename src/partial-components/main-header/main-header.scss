@@ -1,0 +1,77 @@
+#main-header{
+    background-color: $base-yellow;
+    min-height: 100px;
+    .info-container{
+        .img-container{
+            position: relative;
+            width: 120px;
+            height: 100px;
+            
+            .badge-holder{
+                overflow: hidden;
+                position: absolute;
+                background-color: $base-brown;
+                border:2px solid $base-brown;
+                border-radius: 50%;
+                top: 15px;
+                left: -15px;
+                width: 50px;
+                height: 50px;
+                z-index: 2;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .icon-holder{
+                overflow: hidden;
+                position: absolute;
+                background-color: $base-brown;
+                border:2px solid $base-brown;
+                border-radius: 50%;
+                top: 30px;
+                width: 120px;
+                height: 120px;
+                text-align: left;
+                // background-image: url("../assets/images/delantera.jpg");
+                background-repeat: no-repeat;
+                background-size: 150%;
+                background-position: left top;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        .data-container{
+            color: $base-yellow;
+            text-transform: uppercase;
+            .name{
+                border-radius: 15px 15px 0 0;
+                background-color: $base-brown;
+                font-weight: 900;
+                font-size:1.2em;
+    
+            }
+            .lplate{
+                height: auto;
+                border-radius: 0px 15px 0 0;
+                background-color: $base-green;
+                font-size:0.8em;
+            }
+        }
+        .menu-container{
+            width: 60px;
+            height: 60px;
+            padding: 20px;
+            background-color: $base-brown;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    }

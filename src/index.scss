@@ -1,0 +1,87 @@
+// sass --watch app/index.scss app/index.css
+$base-green:#252a02;
+$base-yellow:#92671b;
+$base-brown:#2a1302;
+
+body{
+    background-color: $base-green;
+}
+.pop-up{
+    position: absolute;
+    min-width: 300px;
+    width: 450px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    background-color: $base-green;
+    border: 2px solid $base-yellow;
+    border-radius: 15px;
+    .header{
+        background-color: $base-yellow;
+        border-radius: 10px 10px 0 0;
+        padding: 10px;
+        .icon-holder{
+            background-color: $base-brown;
+            border-radius: 50%;
+            margin-right: -50px;
+            width: 50px;
+            height: 50px;
+            padding: 10px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        p{
+            font-size: 2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    }
+    .wrapper{
+    padding: 0 20px 20px 20px;
+    }
+
+    .input-wrapper{
+        position: relative;
+        margin-top: 10px;
+        border:2px solid $base-yellow;
+        border-radius: 5px;
+        label{
+            position: absolute;
+            margin: 0;
+            padding: 0 5px;
+            line-height: 1;
+            top: -10px;
+            left:5px;
+            color: $base-yellow;
+            background-color: $base-green
+        }
+        input{
+            padding: 10px;
+            color: white;
+            background-color: $base-green;
+            border: none;
+        }
+    }
+    button{
+        background-color: $base-brown;
+        color: $base-yellow;
+        border: 2px solid $base-yellow;
+        border-radius: 5px;
+        padding: 10px 20px ;
+    }
+    a{
+        color:$base-yellow;
+        text-decoration: underline;
+    }
+}
+
+@import 'components/login/login.scss';
+@import 'components/signin/sign-in.scss';
+@import 'components/car-list/car-list.scss';
+@import 'components/service-sheet-list/service-sheet-list.scss';
+@import 'partial-components/main-header/main-header.scss';
+@import 'partial-components/car-item/car-item.scss';
+@import 'partial-components/service-sheet-card/service-sheet-card.scss';

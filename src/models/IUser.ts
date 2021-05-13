@@ -2,7 +2,7 @@ import { v4 as uuidv4 } from "uuid";
 import { ICar } from "./ICar";
 
 export interface IUser {
-  id: string | number;
+  id: string | undefined;
   name?: string;
   username: string;
   password?: string;
@@ -10,7 +10,7 @@ export interface IUser {
 }
 
 export class User implements IUser {
-  id: string | number;
+  id: string | undefined;
   name: string | undefined;
   username: string;
   password: string | undefined;
@@ -18,22 +18,24 @@ export class User implements IUser {
 
   constructor(
     username: string,
-    name?: string | undefined,
-    password?: string | undefined
+    name: string | undefined,
+    password: string | undefined,
+    id?:string | undefined,
   ) {
-    this.id = uuidv4();
+    this.id = id ? id : this.setID();
     this.name = name;
     this.username = username;
     this.password = password;
   }
 
   // id
-  public getID(): string | number {
+  public getID(): string | undefined {
     return this.id;
   }
 
-  public setID(): void {
+  public setID(): string {
     this.id = uuidv4();
+    return this.id;
   }
   // name
   public getName(): string | undefined {
